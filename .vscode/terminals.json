@@ -1,0 +1,142 @@
+{
+  "autorun": true,
+  "terminals": [
+    // Persistent Terminals
+    {
+      "target": "App",
+      "icon": "beaker",
+      "color": "terminal.ansiMagenta",
+      "cwd": "phosphor_icons",
+      "focus": true,
+      "onlyMultiple": true
+    },
+    {
+      "target": "Server",
+      "icon": "console",
+      "color": "terminal.ansiCyan",
+      "cwd": "phosphor_icons",
+      "onlyMultiple": true
+    },
+    {
+      "target": "Mix Tasks",
+      "icon": "tools",
+      "color": "terminal.ansiBlue",
+      "cwd": "phosphor_icons",
+      "onlyMultiple": true
+    },
+    {
+      "target": "Tests",
+      "icon": "verified",
+      "color": "terminal.ansiGreen",
+      "cwd": "phosphor_icons",
+      "onlyMultiple": true
+    },
+    // {
+    //   "target": "Assets",
+    //   "cwd": "phosphor_icons/assets",
+    //   "icon": "preview",
+    //   "color": "terminal.ansiYellow",
+    //   "onlyMultiple": true
+    // },
+    //
+    // Server
+    {
+      "target": "Server",
+      "name": "Run Server",
+      "icon": "server-process",
+      "command": "iex -S mix phx.server",
+      "focus": true,
+      "onlySingle": true
+    },
+    // Tests
+    {
+      "target": "Tests",
+      "name": "Test All",
+      "icon": "files",
+      "command": "mix test",
+      "focus": true,
+      "onlySingle": true
+    },
+    {
+      "target": "Tests",
+      "name": "Test File",
+      "icon": "file",
+      "command": "mix test [file]",
+      "focus": true,
+      "onlySingle": true
+    },
+    {
+      "target": "Tests",
+      "name": "Test Line",
+      "icon": "file-code",
+      "command": "mix test [file]:[lineNumber]",
+      "focus": true,
+      "onlySingle": true
+    },
+    // Mix Deps
+    {
+      "target": "Mix Tasks",
+      "name": "Deps Get Compile",
+      "icon": "cloud-download",
+      "command": "mix do deps.get, deps.compile",
+      "focus": true,
+      "onlySingle": true
+    },
+    {
+      "target": "Mix Tasks",
+      "name": "Deps Clean Unlock",
+      "icon": "trash",
+      "command": "mix deps.clean --all --unlock",
+      "onlySingle": true
+    },
+    // Ecto
+    {
+      "target": "Mix Tasks",
+      "name": "Ecto Migrate",
+      "icon": "layers",
+      "command": "mix ecto.migrate",
+      "onlySingle": true
+    },
+    {
+      "target": "Ecto Reset",
+      "name": "Ecto Reset",
+      "icon": "layers-dot",
+      "cwd": "phosphor_icons",
+      "focus": true,
+      "command": "mix ecto.reset; MIX_ENV=test mix ecto.reset; exit",
+      "onlySingle": true
+    },
+    // Mix Check
+    {
+      "target": "Mix Tasks",
+      "name": "CI Check",
+      "icon": "check-all",
+      "command": "mix check",
+      "focus": true,
+      "onlySingle": true
+    },
+    // Mix Format
+    {
+      "target": "Mix Tasks",
+      "name": "Format File",
+      "icon": "file",
+      "command": "mix format [file]",
+      "onlySingle": true
+    },
+    {
+      "target": "Mix Tasks",
+      "name": "Format All",
+      "icon": "files",
+      "command": "mix format",
+      "onlySingle": true
+    },
+    // Mix Digest Clean
+    {
+      "target": "Mix Tasks",
+      "name": "Digest Clean",
+      "icon": "trash",
+      "command": "mix phx.digest.clean --all",
+      "onlySingle": true
+    }
+  ]
+}

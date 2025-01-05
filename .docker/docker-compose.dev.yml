@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  phoenix_svg_lv_1_dev:
+    build:
+      context: ../
+      dockerfile: .docker/elixir.Dockerfile
+    image: phoenix_svg_lv_1_dev:dev
+    container_name: phoenix_svg_lv_1_dev
+    # ports:
+    #   - 4000:4000
+    volumes:
+      - ../:/app
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+

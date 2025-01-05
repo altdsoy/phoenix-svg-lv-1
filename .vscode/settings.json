@@ -1,0 +1,103 @@
+{
+  "elixirLS.projectDir": "phosphor_icons",
+  "elixirLS.fetchDeps": false,
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.enableTestLenses": true,
+  "editor.fontSize": 17,
+  "terminal.integrated.fontSize": 15,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "workbench.colorTheme": "Jungle Night",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "workbench.colorCustomizations": {
+    "editorGutter.modifiedBackground": "#307C9A",
+    "[Jungle Night]": {
+      "editorCodeLens.foreground": "#455259"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Jungle Night]": {
+      "textMateRules": [
+        {
+          "name": "Elixir Controls",
+          "scope": [
+            "source.elixir keyword.control2.elixir"
+          ],
+          "settings": {
+            "foreground": "#00BD8E",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "name": "Elixir Constants",
+          "scope": [
+            "source.elixir entity.name.function.elixir"
+          ],
+          "settings": {
+            "fontStyle": "underline"
+          }
+        },
+        {
+          "name": "Elixir Constants",
+          "scope": [
+            "source.elixir constant.other.symbol.elixir",
+            "source.elixir constant.other.keywords.elixir",
+            "source.elixir punctuation.definition.constant.elixir"
+          ],
+          "settings": {
+            "foreground": "#68BDA8",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Operator, Misc",
+          "scope": [
+            "keyword.operator",
+            "constant.other"
+          ],
+          "settings": {
+            "foreground": "#00BD8E",
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    }
+  },
+  "workbench.settings.openDefaultKeybindings": true,
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
+  "[elixir]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    // "editor.defaultFormatter": "elixir-tools.elixir-tools"
+    // "editor.defaultFormatter": "lexical-lsp.lexical"
+  },
+  "[phoenix-heex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    // "editor.defaultFormatter": "elixir-tools.elixir-tools"
+    // "editor.defaultFormatter": "lexical-lsp.lexical"
+  },
+}

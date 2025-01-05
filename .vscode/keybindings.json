@@ -1,0 +1,71 @@
+// Associated Keybindings in keybindings.json (ctrl=k ctrl+s / upper-right icon)
+//https://stackoverflow.com/questions/48945319/a-keybindings-json-per-workspace-in-visual-studio-code
+//https://anweshgangula.hashnode.dev/use-same-shortcut-for-different-scripts-in-vs-code
+[
+  {
+    "key": "ctrl+i c",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Check"
+  },
+  {
+    "key": "ctrl+i d",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Deps Get Compile"
+  },
+  {
+    "key": "ctrl+i ctrl+e",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Elixir File"
+  },
+  {
+    "key": "ctrl+i ctrl+d",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Deps Clean All Unlock"
+  },
+  {
+    "key": "ctrl+i f",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Format File"
+  },
+  {
+    "key": "ctrl+i ctrl+f",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Format"
+  },
+  {
+    //Does not exist in tasks
+    "key": "ctrl+i ctrl+h",
+    "command": "workbench.action.tasks.runTask",
+    "args": "List Tasks"
+  },
+  {
+    "key": "ctrl+i i",
+    "command": "workbench.action.tasks.runTask",
+    "args": "IEX Mix"
+  },
+  {
+    "key": "ctrl+i m",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Run"
+  },
+  {
+    "key": "ctrl+i s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Start Server"
+  },
+  {
+    "key": "ctrl+i t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Test File"
+  },
+  {
+    "key": "ctrl+i ctrl+t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Mix Test"
+  },
+  {
+    "key": "ctrl+i w",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Switch ElixirLS"
+  }
+]

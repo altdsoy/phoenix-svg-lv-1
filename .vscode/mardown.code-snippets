@@ -1,0 +1,13 @@
+{
+  "code_block_elixir": {
+    "prefix": "mdce",
+    "body": ["`${1:filename}`\n```elixir\n$2\n```\n"],
+    "description": "Mardown Code block"
+  },
+
+  "code_block": {
+    "prefix": "mdc",
+    "body": ["`${1:filename}`\n```$2\n$3\n```\n"],
+    "description": "Mardown Code block"
+  }
+}

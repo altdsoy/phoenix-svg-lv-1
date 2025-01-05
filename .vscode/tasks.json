@@ -1,0 +1,124 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Check", // ctrl+i c
+      "type": "shell",
+      "presentation": {
+        "clear": true,
+        "reveal": "silent"
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix check"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Deps Get Compile", // ctrl+i d
+      "type": "shell",
+      "presentation": {
+        "close": true
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix do deps.get, deps.compile"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Deps Clean All Unlock", // ctrl+i ctrl+d
+      "type": "shell",
+      "presentation": {
+        "close": true
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix do deps.clean --all --unlock"
+    },
+    {
+      "label": "Elixir File", // ctrl+i ctrl+e
+      "type": "shell",
+      "command": "elixir ${file}"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Format File", // ctrl+i f
+      "type": "shell",
+      "presentation": {
+        "close": true,
+        "reveal": "silent"
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix format ${file}"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Format", // ctrl+i ctrl+f
+      "type": "shell",
+      "presentation": {
+        "close": true,
+        "reveal": "silent"
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix format"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "IEX Mix", // ctrl+i i
+      "type": "shell",
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh iex -S mix"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Run", // ctrl+i m
+      "type": "shell",
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix run"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Start Server", // ctrl+i s
+      "type": "shell",
+      "presentation": {
+        "focus": true
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh iex --name docker@`hostname -i` --cookie testcookie -S mix phx.server"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Test File", // ctrl+i t
+      "type": "shell",
+      "presentation": {
+        "clear": true
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix test ${file} --max-failures 1"
+    },
+    {
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "Mix Test", // ctrl+i ctrl+t
+      "type": "shell",
+      "presentation": {
+        "clear": true
+      },
+      "command": "/${workspaceFolder}/.vscode/mix_dir.sh mix test"
+    },
+    {
+      "label": "Switch ElixirLS", // ctrl+i w
+      "type": "shell",
+      "command": "/${workspaceFolder}/.vscode/switch_elixirls.sh"
+    }
+  ]
+}

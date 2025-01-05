@@ -1,0 +1,30 @@
+{
+  "name": "phoenix_svg_lv_1_dev",
+  "dockerComposeFile": [
+    "../.docker/docker-compose.dev.yml"
+  ],
+  "service": "phoenix_svg_lv_1_dev",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "chekweitan.compare-view",
+        "DavidAnson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "fabiospampinato.vscode-terminals",
+        "gruntfuggly.todo-tree",
+        "heybourn.headwind",
+        "JakeBecker.elixir-ls",
+        // "elixir-tools.elixir-tools",
+        // "lexical-lsp.lexical",
+        "jock.svg",
+        "phoenixframework.phoenix",
+        "Tyriar.sort-lines",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  // Open the sub-folder with the source code
+  "workspaceFolder": "/app"
+}
